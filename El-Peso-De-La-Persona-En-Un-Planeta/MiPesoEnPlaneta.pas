@@ -1,18 +1,24 @@
 
 Program MiPesoEnPlaneta;
+
+Const GravedadTierra = 9.8;
+
+Const GravedadMarte = 3.721;
+
+Const GravedadLuna = 1.62;
+
+Const GravedadJupiter = 24.79;
+
+
+Var MasaPersona: Real;
+
 Begin
+  ReadLn(MasaPersona);
   WriteLn();
-  writeLn('El peso en la tierra de la persona 1 es ', 9.8*80:0:4);
-  writeLn('El peso en marte de la persona 1 es ', 3.721*80:0:4);
-  writeLn('El peso en la luna de la person  a 1 es ', 1.62*80:0:4);
-  WriteLn();
-  writeLn('El peso en la tierra de la persona 2 es ', 9.8*70:0:4);
-  writeLn('El peso en marte de la persona 2 es ', 3.721*70:0:4);
-  writeLn('El peso en la luna de la persona 2 es ', 1.62*70:0:4);
-  WriteLn();
-  writeLn('El peso en la tierra de la persona 3 es ', 9.8*50:0:4);
-  writeLn('El peso en marte de la persona 3 es ', 3.721*50:0:4);
-  writeLn('El peso en la luna de la persona 3 es ', 1.62*50:0:4);
+  writeLn('El peso en la Tierra de la persona es ', GravedadTierra *MasaPersona:0:4);
+  writeLn('El peso en Marte de la persona es ', GravedadMarte * MasaPersona:0:4);
+  writeLn('El peso en la Luna de la persona es ', GravedadLuna *MasaPersona:0:4);
+  writeLn('El peso en la Jupiter de la persona es ', GravedadJupiter *MasaPersona:0:4);
   WriteLn();
 
 End.
